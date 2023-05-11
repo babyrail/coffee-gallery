@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div id="logo-container">
+          <a href="index.html"><img id="h-image" src="./img/logo3.png" alt=""></a>
+        </div>
+        <div id="links-container">
+          <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <i class="fas fa-bars hamburgerMenu"></i>
+    </header>
+    <style>
+      #links-container a.active {
+    background-color: rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 10px 20px; 
+  display: inline-block;
+  }
+  .menu-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    </style>
+<!-- end of header -->
+<section class="contact">
+  <div class="contact-form">
+    <h1>Contact <span>Us</span></h1>
+    <p>Have a question or feedback? Get in touch with us using the form below.</p>
+    <form action="https://formsubmit.co/babyrail2nd@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input tpye="email" name="email" id="" placeholder="E-mail" required>
+
+      <input type="text" name="write a subject" placeholder="Write a subject" required>
+
+      <textarea name="message" id="message"  placeholder="Your Message" required> </textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="submit" name="" value="Submit" class="btn">
+    </form>
+  </div>
+  <div class="contact-img">
+    <img src="img/logo.png">
+  </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <h3>Thankyou for Visiting Our Coffee Shop</h3>
+    <p>If you want to know more about our Shop? you can follow us through our social media.<br>
+    Just click the icons below.</p>
+    <ul class="social-media">
+      <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 The Coffee Shop. All Rights Reserved.</p>
+  </div>
+</footer>
+ </body>
+ </html>

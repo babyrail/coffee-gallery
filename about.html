@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="logo-container">
+        <a href="index.html"
+          ><img id="h-image" src="./img/logo3.png" alt=""
+        /></a>
+      </div>
+      <div id="links-container">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <i class="fas fa-bars hamburgerMenu"></i>
+    </header>
+    <section class="about">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          FOUNDED IN 2021, Tsong's Coffee, a based company started as a dream to
+          start something meaningful. Passionate about quality coffee and aiming
+          to share it with others, we embarked on this adventure to spread our
+          expertise and dedication for coffee and brewers. Today, we are
+          contented to say that many of people enjoy our services and
+          acknowledge our efforts.
+        </p>
+
+        <p>
+          Having extensive consultation experience, we provide advisory for
+          HORECA business through monitoring and auditing on all coffee making
+          procedures in order to ensure profitability. We offer specialized
+          training for baristas through our Training Center because as far as
+          coffee making is concerned, blend is not the only prerequisite.
+        </p>
+
+        <p>
+          We undertake the setup of in-house coffee stations for companies and
+          organizations who wish to serve their colleagues, employees and
+          customers with high quality of services. Adequality our team offers
+          the highest quality specialty coffee beans and is ready to prepare and
+          propose unique blends and private labels upon clients’ taste and
+          demand. Furthermore, we provide professional and home-use equipment
+          for every customer and people can enjoy our blends by ordering through
+          our e-shop or through our delivery services.
+        </p>
+        <div class="about-btn">
+          <a href="gallery.html" class="btn">Our Gallery</a>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="img/bg1.jpg" alt="Coffee Shop Image" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <h3>Thankyou for Visiting Our Coffee Shop</h3>
+        <p>
+          If you want to know more about our Shop? you can follow us through our
+          social media.<br />
+          Just click the icons below.
+        </p>
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com/warren.francisco.56"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/warren.francisco.56"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/warren.francisco.56"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 The Coffee Shop. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <style>
+      #links-container a.active {
+        background-color: rgb(160, 160, 160);
+        border-radius: 10px;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: rgb(160, 158, 158);
+      }
+      @media screen and (max-width: 768px) {
+        .about {
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+        }
+        .about-btn {
+          display: flex;
+          justify-content: center;
+          border: 1px solid black;
+        }
+        .about-btn > btn {
+          margin: 0!important;
+        }
+        .about-content {
+        flex-basis: 100%;
+        padding: 0;
+      }
+      }
+
+      .about-content {
+        flex-basis: 50%;
+
+      }
+
+      .about-image {
+        flex-basis: 40%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .about img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 50px;
+      }
+
+      .about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .about-btn{
+        display: flex;
+        gap: 3%;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: black;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        border-radius: 15px;
+      }
+
+      .btn:hover {
+        background-color: #666;
+      }
+    </style>
+
+    <!-- <section class="about">
+      <div class="container">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>Welcome to our cozy coffee shop, where we're passionate about serving the best coffee in town. Our beans are sourced from the finest growers around the world and roasted in-house to perfection.</p>
+          <p>But it's not just our coffee that makes us special. We pride ourselves on creating a warm and inviting atmosphere where customers can relax, work, or catch up with friends. Our friendly staff is always happy to chat or offer recommendations, and our free Wi-Fi and comfortable seating make us the perfect spot for a study session or a casual meeting.</p>
+          <div class="buttons">
+            <a href="#" class="button">Our Menu</a>
+            <a href="#" class="button">Contact Us</a>
+          </div>
+        </div>
+        <div class="container">
+          <img src="img/logo.png" alt="Your Image">
+        </div>
+      </div>
+    </section>
+    <style>
+      .about {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex-basis: 100%;
+  max-width: 600px;
+  margin-right: 50px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+/* .about-image {
+  flex-basis: 100%;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+} */
+.container {
+  height: 50px; /* set the height of the container to the desired size */
+  /* margin-left: 100px; */
+}
+
+.container img {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+} -->
+
+    <!-- FOOTER SECTION-->
+    <!-- <footer>
+      <div class="footer-content">
+        <h3>About Our Coffee Shop</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel velit ipsum. Sed eget posuere nisi. Maecenas semper turpis et massa varius, sit amet tristique elit fringilla. Sed at ex a purus suscipit pharetra vel ut risus.</p>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 The Coffee Shop. All Rights Reserved.</p>
+      </div>
+    </footer> -->
+  </body>
+</html>

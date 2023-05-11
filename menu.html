@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div id="logo-container">
+      <a href="index.html"><img id="h-image" src="./img/logo3.png" alt=""></a>
+    </div>
+    <div id="links-container">
+      <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <i class="fas fa-times closeMobileNav"></i>    
+    </div>
+    <i class="fas fa-bars hamburgerMenu"></i>
+  </header>
+    <!-- End of Header -->
+    <section class="menu">
+      <div class="menu-title">Featured Products</div>
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="img/americano.jpg" alt="coffee 1">
+          <h3>Drip Coffee</h3>
+          <p id="menu-grid">A classic method of brewing coffee using a coffee maker, which drips hot water through a filter filled with ground coffee beans. </p>
+          <span>P80</span>
+        </div>
+        <div class="menu-item">
+          <img src="img/espresso.jpg" alt="coffee 2">
+          <h3>Espresso</h3>
+          <p id="menu-grid">A concentrated shot of coffee made by forcing pressurized hot water through finely ground coffee beans. Espresso has a strong and bold flavor.</p>
+          <span>P85</span>
+        </div>
+        <div class="menu-item">
+          <img src="img/cappuccino.jpg" alt="coffee 3">
+          <h3>americano</h3>
+          <p id="menu-grid">A simple coffee made by adding hot water to a shot of espresso. This creates a longer, milder coffee.</p>
+          <span>P80</span>
+        </div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="img/cold coffee 2.jfif" alt="coffee 4">
+          <h3>Iced Coffee</h3>
+          <p id="menu-grid"> a classic cold coffee made by brewing coffee using hot water and then cooling it down with ice. It is usually served with milk and sugar.</p>
+          <span>P70</span>
+        </div>
+        <div class="menu-item">
+          <img src="img/cold coffe 3.jfif" alt="coffee 5">
+          <h3>Cold Brew Coffee</h3>
+          <p id="menu-grid">Cold brew coffee is made by steeping coarsely ground coffee in cold water for 12-24 hours. This process results in a smooth, less acidic coffee with a sweeter flavor.</p>
+          <span>P90</span>
+        </div>
+        <div class="menu-item">
+          <img src="img/americano.jpg" alt="coffee 6">
+          <h3>Nitro Cold Brew Coffee</h3>
+          <p id="menu-grid">made by infusing cold brew coffee with nitrogen gas, resulting in a creamy, foamy texture similar to that of a beer. It has a smooth and velvety mouthfeel.
+          </p>
+          <span>P85</span>
+        </div>
+            <div class="menu-item">
+              <img src="img/Frank-about-tea-earl-grey-thee-300x300.jpg" alt="coffee 1">
+              <h3>Drip Coffee</h3>
+              <p id="menu-grid">Your morning grey with a twist Our own version of the classic Earl Grey, with lavender and pink pepper. Raising it from ordinary to extraordinary. </p>
+              <span>P80</span>
+            </div>
+            <div class="menu-item">
+              <img src="img/nomad-300x300 (1).jpg" alt="coffee 2">
+              <h3>Espresso</h3>
+              <p id="menu-grid">Nomad is a 2 origin Colombia and Guatemala Blend. An easy drinking medium bodied and balanced coffee.</p>
+              <span>P85</span>
+            </div>
+            <div class="menu-item">
+              <img src="img/ginger_lemon_mockup-768x638-1-300x300.jpg" alt="coffee 3">
+              <h3>americano</h3>
+              <p id="menu-grid">An Earl Gray-esque morning tea with a twist. Our own version of the classic Earl Gray, with natural bergamot.</p>
+              <span>P80</span>
+            </div>
+      </div>
+    </section>
+      <!-- end of menu section -->
+      <footer>
+        <div class="footer-content">
+          <h3>Thankyou for Visiting Our Coffee Shop</h3>
+          <p>If you want to know more about our Shop? you can follow us through our social media.<br>
+          Just click the icons below.</p>
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/warren.francisco.56"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 The Coffee Shop. All Rights Reserved.</p>
+          <button id="scroll-to-top-btn" style="position: fixed; bottom: 20px; right: 20px;"><i class="fas fa-chevron-up"></i></button>
+
+        </div>
+      </footer>
+      <style>
+        #links-container a.active {
+    background-color: rgb(160, 160, 160);
+    border-radius: 10px;
+  padding: 10px 20px; 
+  display: inline-block;}
+        #c-menu{
+  padding: 25px 0 25px 0;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#menu-button {
+  background: black;
+  margin: auto;
+  border-radius: 10px;
+}
+#menu-button:hover{
+  background: grey;
+  border-radius: 10px;
+}
+#section{
+  /* padding: 25px 0 25px 0; */
+  text-align: center;
+  font-size: 2rem;
+  font-family: verdana;
+  
+}
+#menu_row{
+  display: flex;
+  padding: 0 100px 0 100px;
+}
+#menu_col{
+  box-shadow: 2px 2px 2px #bbb;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+}
+#menu_col h2{
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+#menu-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  padding: 5px;
+  border: 2px solid grey;
+}
+#menu-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#menu-image:hover img{
+  border-radius: 0px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+#menu-title{
+  color: grey;
+  text-transform: uppercase;
+}
+
+      </style>
+        <script >const hamburger = document.querySelector('.hamburgerMenu');   
+          const navBar = document.querySelector('#links-container');
+          const menuClose = document.querySelector('.closeMobileNav');
+          menuClose.addEventListener('click',()=>{
+            navBar.classList.remove('hidden');
+            navBar.classList.add('hide');
+          
+          });
+          hamburger.addEventListener('click', ()=>{
+           navBar.classList.add('hidden');
+           navBar.classList.remove('hide');
+           console.log("clicked")
+          });</script>
+        </body>
+</html>   
+
+  
